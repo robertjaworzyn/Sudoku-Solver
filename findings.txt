@@ -1,0 +1,23 @@
+Summarise your findings here (see specification).
+
+Mystery board number 2 is the unsolvable one. Mystery board 1 takes longer
+than mystery board 3. The times below are averaged over three trials, and do
+not include the counting of recursive solve_board calls, which have
+included in a separate column and were counted in a separate trial.
+
+------------------------------------------------------------------------------------
+  Board  |                Run time (s)                   | No. of solve_board calls |     
+---------|-----------------------------------------------|--------------------------|  
+         |  Trial 1  |  Trial 2  |  Trial 3  |  Average  |                          |
+---------|-----------|-----------|-----------|-----------|--------------------------|
+Mystery3 | 0.0040029 | 0.0040757 | 0.0040020 | 0.0040267 |          14134           |
+---------|-----------|-----------|-----------|-----------|--------------------------|   
+Mystery1 | 0.1241712 | 0.1769491 | 0.1230674 | 0.1413956 |          421547          |
+------------------------------------------------------------------------------------
+
+So it's clear that mystery board 3 is the hard one and mystery board 1
+is the extremely hard one. So to summarize:
+
+Hard : Mystery 3
+Very Hard : Mystery 1
+Impossible : Mystery 2
